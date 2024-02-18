@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+
+    --background-color: #000;
+  --page-width: 60em;
+  --font-color: #fff;
+  --invert-font-color: #000;
+  --primary-color: #ffffff;
+  --secondary-color: #fff;
+  --error-color: #d20962;
+  --progress-bar-background: #3b3b3b;
+  --progress-bar-fill: #ffffff;
+  --code-bg-color: #e8eff2;
+  --input-style: solid;
+  
+
+  --status-color: #57F287;
+}
+
+.pfp__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Adicionado para que as posições absolutas sejam relativas a este contêiner */
+}
+
+.image-overlay-container {
+    position: relative; /* Importante para que os elementos filhos usem posições absolutas em relação a este contêiner */
+}
+
+.overlay__container {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--status-color);
+    border: 2px solid var(--background-color);
+    border-radius: 100%;
+    bottom: 10px; /* Ajuste a posição vertical em relação à imagem */
+    right: 10px; /* Ajuste a posição horizontal em relação à imagem */
+}
+
+.overlay__map {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url("https://twemoji.maxcdn.com/2/svg/1f4cd.svg");
+
+    bottom: 35px; /* Ajuste a posição vertical em relação à imagem */
+    right: 195px; /* Ajuste a posição horizontal em relação à imagem */
+}
+/* ... Seu código existente ... */
+
+.splide__list {
+    margin-left: 10px;
+}
+
+.splide__slide{
+    margin-left: 24000px;
+}
+
+.image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
